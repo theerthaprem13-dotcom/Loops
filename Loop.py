@@ -30,3 +30,69 @@ while number1<=5:
 for i in range(3):
     for j in range(2):
         print(i,j)
+
+
+# #Syntax of while loop
+# while condition:
+#     statement
+
+#Flow chart
+
+# Start
+# ↓
+# Check Condition
+# ↓
+# True?
+# ↓
+# Run Code
+# ↓
+# Go back
+# ↓
+# Condition False
+# ↓
+# Stop
+
+
+number2=1
+
+while number2<=5:
+    print("The number is", number2)
+    number2=number2+1
+
+#Assignement: ask the user to enter the correct password
+
+password=""
+
+attempt=1
+
+while password!=1234:
+    password=int(input("Enter your password:"))
+
+    if password==1234:
+        print("Login Successfull")
+    else:
+        print("Wrong password")
+    
+        attempt=attempt+1
+
+    if password!=1234 and attempt>3:
+        print("Account Locked")
+    
+    attempt1=1
+    while True:
+        password1=input("Enter your password:")
+
+        if password1=="pythonabc":
+            print("Login Sucessfull")
+            break
+        else:
+            print("Wrong password")
+        attempt1=attempt1+1
+        if attempt1>3:
+            print("Acount locked") 
+            break
+
+
+
+
+
