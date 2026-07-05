@@ -133,7 +133,17 @@ while k<=5:
         l=l+1
     print()
     k=k+1
+print("**************************************")
+#Character occurance
 
+name="Theertha"
+
+for a in name:
+    count=0
+    for b in name:
+        if a==b:
+            count=count+1
+    print(a,"=",count)
 
 
 
