@@ -92,6 +92,47 @@ while password!=1234:
             print("Acount locked") 
             break
 
+#Nested loop: It means a loop inside another loop
+# Syntax of Nested Loop
+# For Loop Inside For Loop
+# for variable1 in sequence:
+#     for variable2 in sequence:
+#         statements
+
+
+# While Loop Inside While Loop
+# while condition:
+#     while condition:
+#         statements
+
+# Important Rule
+
+# The outer loop runs first.
+
+# Then the inner loop runs completely.
+
+# After the inner loop finishes,
+
+#Assignement 1: For loop inside for loop
+
+#Outer loop
+for i in range(1,5):
+    #Inner loop
+    for j in range(1,11):
+        print(j,end=" ")
+    print()
+ 
+ #While loop inside while loop
+print("***********************")
+k=1
+
+while k<=5:
+    l=1
+    while l<=10:
+        print(l, end=" ")
+        l=l+1
+    print()
+    k=k+1
 
 
 
