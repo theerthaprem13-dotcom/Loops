@@ -1,0 +1,69 @@
+#Function: It is a group of instructions that perform one specific task.
+#Types of functions:1)Built-in functions(eg.print(),input(),len(),type()) 2)User-defined functions(eg.syntax)
+#def function_name():
+#    statement
+
+def greet():
+    print("Good morning")
+
+#Calling a function
+
+greet()
+
+#Assignement 1:
+
+def greet(name):
+    print("Hello",name)
+
+
+greet("Theertha")
+
+#Assignement 2:
+
+def add(a,b):
+    print(a+b)
+
+add(5,3)
+
+#Assingnement 3:
+def add(a,b):
+    return a+b
+
+result=add(5,3)
+
+print(result)
+
+#Assignement 4:
+
+def add(p,q):
+    return p+q
+
+def sub(p,q):
+    return p-q
+
+def multiply(p,q):
+    return p*q
+
+def divide(p,q):
+    return p/q
+
+print("Please select the opperation")
+print("a.Add")
+print("b.Subtract")
+print("c.Multiply")
+print("d.Divide")
+choice=input("Please enter your choice(a/b/c/d):")
+
+num1=int(input("Please enter the first number:"))
+num2=int(input("Please enter the second number:"))
+
+if choice=='a':
+    print(num1,"+",num2,"=",add(num1,num2))
+elif choice=='b':
+    print(num1,"-",num2,"=",sub(num1,num2))
+elif choice=='c':
+    print(num1,"*",num2,"=",multiply(num1,num2))
+elif choice=='d':
+    print(num1,"/",num2,"=",divide(num1,num2))
+else:
+    print("This an invalid input!")
